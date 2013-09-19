@@ -1,0 +1,29 @@
+{
+    "name": "scrollwatched",
+    "title": "jQuery ScrollWatched",
+    "description": "jQuery plugin for triggering event handlers when an element scrolls in/out of view.",
+    "keywords": [
+        "scrolling",
+        "trigger"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Kirk Bulis",
+        "url": "https://github.com/kbulis"
+    },
+    "maintainers": [
+        {
+            "name": "Kirk Bulis",
+            "url": "https://github.com/kbulis"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6"
+    }
+}
