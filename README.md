@@ -6,7 +6,7 @@ Simple usage:
 
     $(function () {
 
-        $.scrollwatched("#elementtowatch",
+        $("#elementtowatch").scrollwatched(
             { scrolledout: function () {
                     // do something when #elementtowatch scrolled out of view
                 }
