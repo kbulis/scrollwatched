@@ -52,13 +52,24 @@
                     }
                 }
             }
-        }
+        };
 
-        $(document).ready(function () {
+        self.unwire = function () {
+            $element.removeData("scrollwatched_scrolledin");
+            $.removeData($element, "plugin_scrollwatched");
+            
+            self.evaluate = function () {
+            };
+            
+            self.unwire = function () {
+            };
+        };
+        
+        $(window).scroll(function () {
             self.evaluate(false);
         });
 
-        $(window).scroll(function () {
+        $(window).load(function () {
             self.evaluate(false);
         });
     };
@@ -74,4 +85,12 @@
         });
     }
 
+    $.fn["unscrollwatched"] = function () {
+        return this.each(function () {
+            if ($.data(this, "plugin_scrollwatched")) {
+                $.data(this, "plugin_scrollwatched").unwire();
+            }
+        });
+    }
+    
 })(jQuery, window, document);
