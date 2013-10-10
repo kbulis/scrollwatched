@@ -12,9 +12,17 @@ Simple usage:
                 }
             , scrolledin: function () {
                     // do something when #elementtowatch scrolled in to view
+                    
+                    // rewatch scrolled state to trigger events again
+                    
+                    $("#elementtowatch").scrollwatched();
                 }
             , proximity: 40
             }
         );
 
     });
+
+Check out the following fiddle for a running example:
+
+http://jsfiddle.net/kbulis/sefXH/
