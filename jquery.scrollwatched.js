@@ -69,28 +69,27 @@
             self.evaluate(false);
         });
 
-        $(window).load(function () {
+        $(function() {
             self.evaluate(false);
         });
     };
 
-    $.fn["scrollwatched"] = function (oOptions) {
-        return this.each(function () {
+    $.fn["scrollwatched"] = function(oOptions) {
+        return this.each(function() {
             if (!$.data(this, "plugin_scrollwatched")) {
                 $.data(this, "plugin_scrollwatched", new Plugin(this, oOptions));
-            }
-            else {
+            } else {
                 $.data(this, "plugin_scrollwatched").evaluate(true);
             }
         });
-    }
+    };
 
-    $.fn["unscrollwatched"] = function () {
-        return this.each(function () {
+    $.fn["unscrollwatched"] = function() {
+        return this.each(function() {
             if ($.data(this, "plugin_scrollwatched")) {
                 $.data(this, "plugin_scrollwatched").unwire();
             }
         });
-    }
-    
+    };
+
 })(jQuery, window, document);
