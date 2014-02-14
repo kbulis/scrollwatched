@@ -23,6 +23,6 @@ Simple usage:
 
     });
 
-Check out the following fiddle for a running example:
+Check out the following fiddle for running examples:
 
 http://jsfiddle.net/kbulis/sefXH/
